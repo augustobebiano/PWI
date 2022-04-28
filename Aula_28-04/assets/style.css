@@ -1,0 +1,60 @@
+.destaque{
+    color: white;
+    background-image: url(images/fundo.jpeg);
+    margin-top: 20px;
+    margin: auto;
+    height: 1024px;
+    width: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    margin-left: 20px;
+    display: inherit;
+}
+
+a:visited{
+    text-decoration: none;
+    color: orangered;
+}
+
+a{
+    text-decoration: none;
+    background-color: brown;
+    color: orangered;
+    padding: 10px;
+    border: red 2px;
+    border-radius: 1cm;
+}
+
+header{
+    display: inline;
+}
+
+a:hover{
+    color: rgb(189, 52, 2);
+}
+
+ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+nav{
+    text-align: right;
+    display: inline-block;
+}
+
+p{
+    text-align: justify;
+}
+
+ul{
+    display: inline-block;
+    text-align: right;
+    margin-right: 20px;
+}
+
+body{
+    background-color: brown;
+}
