@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'GenshinFont';
+    src: url('/assets/fonts/ja-jp.ttf');
+}
+
+body {
+    background-image: url(https://lh6.googleusercontent.com/bxEJWyiwSLmiRbmARKyTLp89yZ3msQ2gCPq8SDLQDFaaXl_jeLILutiWEDcvhUwaBzO5QK4o8jYqYwFoHckOAc6KwizP3ghPee2KzG5OYRKA_50NGgcRZ0tgTxbtZz04y9Jt_gWI);
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+}
+main {
+    background-color:rgba(66, 52, 41, 0.6);
+    min-height: 80vh;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+    padding: 25px;
+    width: 190vh;
+}
+.links, a, a:visited {
+    text-decoration: none;
+    color: white;
+}
+.nav2__menu a, .nav2__menu a:visited {
+    border: solid #f0f0f0;
+    border-radius: 1cm;
+    border-width: 1px;
+}
+header {
+    margin-top: -10px;
+    margin-bottom: 25px;
+    background-color: 	#3b2f2e;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    margin-left: -10px;
+    margin-right: -7px;
+}
+footer{
+    margin-top: 25px;
+    margin-bottom: -10px;
+    background-color: 	#3b2f2e;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-left: -10px;
+    margin-right: -7px;
+    text-align: center;
+}
+footer div p{
+    display:inline-block;
+}
+footer p{
+    margin-top: -3px;
+}
+footer div ul{
+    list-style: none;
+    text-align: center;
+    text-align: left;
+    display:inline-block;
+    vertical-align: middle;
+}
+h1, h1 a{
+    color: #f0f0f0;
+    font-family: 'GenshinFont';
+    font-size: 50px;
+    font-weight: normal;
+    width: 500px;
+    margin: 0px -20px 20px 35px;
+    text-align: left;
+    display: inline;
+    vertical-align: middle;
+}
+.nav {
+    font-family: 'GenshinFont';
+    font-weight: normal;
+    display: inline-block;
+    margin: 0 auto;
+    color: #f0f0f0;
+}
+.nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.nav a {
+    display: block;
+    padding: 0 16px;
+    line-height: inherit;
+    cursor: pointer;
+    color: #f0f0f0;
+}
+.nav__menu {
+    position: relative;
+    top: 11px;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+.nav2__menu {
+    line-height: 45px;
+    text-transform: uppercase;
+    margin-right: -30px;
+}
+.nav__menu-item {
+    display: inline-block;
+    position: relative;
+    min-width: 160px;
+    text-align: center;
+}
+.nav2__menu-item {
+    border-radius: 1cm;
+    display: inline-block;
+    position: relative;
+    min-width: 100px;
+    text-align: center;
+    margin-left: 5px;
+}
+.menu__space {
+    display:inline-flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.nav__menu-item:hover {
+    margin: 0;
+}
+.nav2__menu-item:hover {
+    background-color: #737373;
+}
+.nav__menu-item:hover .nav__submenu {
+    display: block;
+    position: absolute;
+    margin-left: -20px;
+}
+.nav__submenu {
+    font-weight: 300;
+    text-transform: none;
+    display: none;
+    position: absolute;
+    width: 200px;
+    background-color: #747474ee;
+    text-align: center;
+}
+.nav__submenu-item:hover {
+    background: rgb(66, 52, 41, 0.2);
+}
