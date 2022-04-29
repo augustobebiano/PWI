@@ -1,0 +1,42 @@
+img{
+    box-sizing: border-box;
+    float: left;
+    height: 281px;
+    width: auto;
+    margin-right: 20px;
+    margin-left: 30vh;
+    margin-bottom: 5vh;
+    border: solid 10px aquamarine;
+}
+h2{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 10vh;
+}
+tfoot{
+    text-align: justify;
+}
+tbody, thead{
+    text-align: center;
+}
+.venti{
+    margin-left: 20vh;
+    clip: rect(10px, 10px, 10px, 0px);
+    border: solid 10px aquamarine;
+    clip-path: inset(10% 10% 10% 20%);
+}
+main ul li{
+    margin-top: 5vh;
+    max-width: 50vh;
+    border: solid 10px aquamarine;
+    float:right;
+    margin-right: 50vh;
+    list-style-type: none;
+}
+h3{
+    margin-left: 5vh;
+    clear: left;
+}
+footer{
+    clear: left;
+}
