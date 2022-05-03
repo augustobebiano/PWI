@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Augusto Bebiano">
+    <meta name="description" content="signup screen">
+    <title>Sign Up | Zhongli Impact</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Zhongli Impact</a></h1>
+        <nav>
+            <ul>
+                <li><a href="partybuilder.html">Party builder</a></li>
+                <li>Characters
+                    <ul>
+                        <li><a href="mondstadt.html">Mondstadt</a></li>
+                        <li><a href="liyue.html">Liyue</a></li>
+                        <li><a href="inazuma.html">Inazuma</a></li>
+                    </ul>
+                </li>
+                <li>Weapons
+                    <ul>
+                        <li><a href="bows.html">Bows</a></li>
+                        <li><a href="catalysts.html">Catalysts</a></li>
+                        <li><a href="claymores.html">Claymores</a></li>
+                        <li><a href="polearms.html">Polearms</a></li>
+                        <li><a href="swords.html">Swords</a></li>
+                    </ul>
+                </li>
+                <li><a href="signin.html">Sign in</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <form action="/signup" method="post">
+            <table>
+                <tr>
+                    <td><label for="id_username">Username:</label></td>
+                    <td><input type="text" placeholder="Username" name="username" id="id_username"></td>
+                </tr>
+                <tr>
+                    <td><label for="id_email">E-Mail:</label></td>
+                    <td><input type="email" placeholder="E-Mail" name="email" id="id_email"></td>
+                </tr>
+                <tr>
+                    <td><label for="id_password">Password:</label></td>
+                    <td><input type="password" placeholder="Password" name="password" id="id_password"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Submit" onclick="acao"></td>
+                </tr>
+            </table>
+        </form>
+    </main>
+    <footer>
+        <hr>
+        <p>
+            Developed by hookez
+        </p>
+        <p><b>Contact:</b></p>
+        <ul>
+            <li>GitHub: <a href="https://github.com/hookez">hookez</a></li>
+            <li>E-Mail: <a href = "mailto: augustobcorrea@gmail.com">augustobcorrea@gmail.com</a></li>
+            <li>Instagram: <a href="https://instagram.com/augustobc_">augustobc_</a></li>
+        </ul>
+        <p>
+            This website is not affiliated with HoYoverse.
+            Genshin Impact™, all assets files and game data are trademarks and copyrights by ©MiHoYo Co., Ltd.
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+.destaque{
+    color: white;
+    background-image: url(images/fundo.jpeg);
+    margin-top: 20px;
+    margin: auto;
+    height: 1024px;
+    width: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+h1{
+    margin-left: 20px;
+    display: inherit;
+}
+
+a:visited{
+    text-decoration: none;
+    color: orangered;
+}
+
+a{
+    text-decoration: none;
+    background-color: brown;
+    color: orangered;
+    padding: 10px;
+    border: red 2px;
+    border-radius: 1cm;
+}
+
+header{
+    display: inline;
+}
+
+a:hover{
+    color: rgb(189, 52, 2);
+}
+
+ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+nav{
+    text-align: right;
+    display: inline-block;
+}
+
+p{
+    text-align: justify;
+}
+
+ul{
+    display: inline-block;
+    text-align: right;
+    margin-right: 20px;
+}
+
+body{
+    background-color: brown;
+}
+
+
+
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #303030;
+    color: white;
+}
+a, a:visited{
+    text-decoration: none;
+}
+header{
+    margin-top: 15px;
+}
+h1 {
+    font-size: 50px;
+    width: 500px;
+    margin: auto 30px 20px;
+    color: #f0f0f0;
+    text-align: left;
+    display: inline;
+    vertical-align: -5px;
+}
+.nav {
+    display: inline-block;
+    margin: 0 auto;
+    color: #f0f0f0;
+}
+.nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.nav a {
+    display: block;
+    padding: 0 16px;
+    line-height: inherit;
+    cursor: pointer;
+    color: #f0f0f0;
+}
+.nav__menu {
+    line-height: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.nav__menu-item {
+    display: inline-block;
+    position: relative;
+    min-width: 160px;
+    text-align: center;
+}
+.nav2__menu-item {
+    display: inline-block;
+    position: relative;
+    min-width: 100px;
+    text-align: center;
+}
+.menu__space {
+    display:inline-flex;
+    justify-content: space-between;   
+}
+.nav__menu-item:hover {
+    background-color: #9b59b6;
+}
+.nav2__menu-item:hover {
+    background-color: #737373;
+}
+.nav__menu-item:hover .nav__submenu {
+    display: block;
+    position: absolute;
+    margin-left: -20px;
+}
+.nav__submenu {
+    font-weight: 300;
+    text-transform: none;
+    display: none;
+    position: absolute;
+    width: 200px;
+    background-color: #9b59b6;
+    text-align: center;
+}
+.nav__submenu-item:hover {
+    background: rgba(133, 39, 39, 0.1);
+}
