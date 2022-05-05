@@ -1,0 +1,119 @@
+*{
+    margin: 0%;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+header{
+    background-image: url("https://images.pexels.com/photos/796602/pexels-photo-796602.jpeg?cs=srgb&dl=pexels-ylanite-koppens-796602.jpg&fm=jpg");
+    height: 70vh;
+    background-size: cover;
+    background-position: bottom;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header div ul{
+    float: right;
+    margin-top: 2.5vh;
+    margin-right: 6vh;
+}
+
+header div ul li{
+    display: inline-block;
+    border: 0.2vh white;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1vh;
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+}
+
+header div ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    padding-top: 30vh;
+    text-align: center;
+    font-size: 5vh;
+    text-shadow: 2px 2px 5px white;
+}
+
+.subtitle{
+    margin-top: 3vh;
+    color: white;
+    max-width: fit-content;
+    padding: 1vh;
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 0.3vh solid white;
+}
+
+.apps{
+    background-color: white;
+    margin: 3vh;
+    width: 79vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.img1{
+    width: 25vw;
+    height: 25vw;
+    background-image: url("https://images.pexels.com/photos/196655/pexels-photo-196655.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+}
+
+.img2{
+    width: 25vw;
+    height: 25vw;
+    background-image: url("https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+}
+
+.img3{
+    width: 25vw;
+    height: 25vw;
+    background-image: url("https://images.pexels.com/photos/67112/pexels-photo-67112.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+}
+
+.apptxt{
+    width: 23vw;
+    padding: 1vw;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+}
+
+.appmargin{
+    margin-top: 1vw;
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+}
+
+.textblock{
+    background-color: white;
+    margin: 3vh;
+    width: 79vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.text1{
+    width: 23vw;
+    margin: 1vw;
+    padding: 1vw;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(211, 211, 211, 0.585);
+}
