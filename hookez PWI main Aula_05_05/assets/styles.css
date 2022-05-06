@@ -1,0 +1,140 @@
+*{
+    margin: 0%;
+}
+
+body{
+    background-color: lightgrey;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-image: url("https://images.pexels.com/photos/796602/pexels-photo-796602.jpeg?cs=srgb&dl=pexels-ylanite-koppens-796602.jpg&fm=jpg");
+    height: 80vh;
+    font-size: 2.3vh;
+    background-size: cover;
+    background-position: bottom;
+}
+
+header div ul{
+    float: right;
+    text-transform: uppercase;
+    margin-top: 2.5vh;
+    margin-right: 6vh;
+}
+
+header div ul li{
+    display: inline-block;
+    border: 0.3vh white;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1vh;
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+}
+
+header div ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    padding-top: 35vh;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 7vh;
+    text-shadow: 0.2vh 0.2vh 0.5vh white;
+}
+
+.subtitle{
+    margin-top: 10vh;
+    color: white;
+    max-width: fit-content;
+    padding: 1.5vh;
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 0.4vh solid white;
+}
+
+.apps{
+    background-color: white;
+    margin: 2.5vh;
+    width: 79vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.img1{
+    width: 25vw;
+    height: 25vw;
+    background-image: url("https://images.pexels.com/photos/196655/pexels-photo-196655.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+}
+
+.img2{
+    width: 25vw;
+    height: 25vw;
+    background-image: url("https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+}
+
+.img3{
+    width: 25vw;
+    height: 25vw;
+    background-image: url("https://images.pexels.com/photos/67112/pexels-photo-67112.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+}
+
+.apptxt{
+    width: 23vw;
+    padding: 1vw;
+    color: white;
+    background-color: dimgray;
+}
+
+.appmargin{
+    margin-top: 1vw;
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+}
+
+.textblock{
+    background-color: white;
+    margin-top: 2.5vh;
+    padding: 1vw;
+    width: 77vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text1{
+    width: 75.4vw;
+    padding: 0.8vw;
+    padding-bottom: 0.6vw;
+    color: black;
+    background-color: rgba(211, 211, 211, 0.585);
+    font-weight: bold;
+    font-size: 3vh;
+    border-bottom: 0.4vh solid dimgray;
+}
+
+.text2{
+    margin-top: 2vh;
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+footer{
+    background-color: dimgray;
+    margin-top: 2.5vh;
+    color: white;
+    text-shadow: 0.2vh 0.2vh 0.5vh black;
+    padding: 4vh;
+    text-align: center;
+    font-size: 2vh;
+    height: 2vh;
+}
