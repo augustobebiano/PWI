@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'GenshinFont';
+    src: url('/assets/fonts/ja-jp.ttf');
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    background-image: url(https://leogaming.net/img/news/uploads/61b0cf33797b5cropped-1440-900-1189622.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: 'GenshinFont';
+    color: #f0f0f0;
+    font-size: 110px;
+    font-weight: normal;
+    text-align: center;
+}
+
+h2{
+    font-family: 'GenshinFont';
+    color: #f0f0f0;
+    font-size: 60px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 30vh;
+}
+
+header p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f0f0f0;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 25vh;
+}
+
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;    
+}
+
+header{
+    scroll-snap-align: start;
+    height: 100vh;
+}
+
+.geo{
+    background-color: rgba(235, 172, 57, 0.2);
+    scroll-snap-align: center;
+    height: 85vh;
+}
+
+.anemo{
+    background-color: rgba(97, 235, 191, 0.2);
+    scroll-snap-align: center;
+    height: 100vh;
+}
+
+.hydro{
+    background-color: rgba(46, 173, 227, 0.2);
+    scroll-snap-align: center;
+    height: 85vh;
+}
+
+.pyro{
+    background-color: rgba(234, 108, 44, 0.2);
+    scroll-snap-align: center;
+    height: 85vh;
+}
+
+.cryo{
+    background-color: rgba(140, 242, 251, 0.2);
+    scroll-snap-align: center;
+    height: 85vh;
+}
+
+footer{
+    height: 7.5vh;
+    margin-left: 4vw;
+    background-color: rgba(66, 52, 41, 0.9);
+}
+
+.region{
+    opacity: 45%;
+    float: left;
+    position: absolute;
+    z-index: -1;
+    width: 40vw;
+    margin-left: 30vw;
+    margin-top: 2.5vw;
+}
+
+.vision{
+    float: left;
+    position: absolute;
+    height: 12vh;
+    margin-left: 8vh;
+    margin-top: 2.9vh;
+}
+
+.charname{
+    font-family: 'GenshinFont';
+    font-size: 4.5vh;
+    font-weight: normal;
+    margin-left: 15vh;
+    float: left;
+    position: absolute;
+    margin-top: 6.5vh;
+    clear: both;
+}
+
+.chartype{
+    font-family: 'GenshinFont';
+    font-size: 2.3vh;
+    font-weight: normal;
+    margin-left: 16.5vh;
+    float: left;
+    position: absolute;
+    margin-top: 12vh;
+    clear: both;
+}
+
+.typesize{
+    transform: scale(2);
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+}
+
+.justifytxt{
+    text-align: justify;
+    max-width: 38vw;
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5vh;
+    margin-top: 35vh;
+    margin-left: 6vw;
+    color: white;
+}
+
+.desc{
+    margin-left: 3vh;
+}
+
+.charimg{
+    float: right;
+    height: 85vh;
+    position: absolute;
+    margin-left: 75vh;
+}
+
+.typesizeright{
+    transform: scale(2);
+    position: absolute;
+    margin-left: 49vw;
+    color: white;
+    white-space: nowrap;
+}
+
+.typesizexiao{
+    transform: scale(2);
+    position: absolute;
+    margin-left: 45vw;
+    color: white;
+    white-space: nowrap;
+}
+
+.justifytxtright{
+    text-align: justify;
+    max-width: 38vw;
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5vh;
+    margin-top: 35vh;
+    margin-left: 55vw;
+    color: white;
+}
+
+.justifyxiao{
+    text-align: justify;
+    max-width: 35vw;
+    float: left;
+    font-family: Arial;
+    line-height: 3.5vh;
+    font-size: 2.5vh;
+    margin-top: 32vh;
+    margin-left: 53vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-top: solid 0.4vh rgba(255, 255, 255, 0.8);
+    padding-top: 1.1vw;
+    padding-bottom: 1vw;
+    padding-left: 4vw;
+    padding-right: 1.5vw;
+}
+
+.descright{
+    margin-left: 5vh;
+}
+
+.descxiao{
+    padding-top: 15vh;
+    margin-left: 5vh;
+}
+
+.charimgright{
+    float: right;
+    height: 85vh;
+    position: absolute;
+    margin-left: -15vh;
+}
+
+.xiao{
+    float: right;
+    height: 100vh;
+    position: absolute;
+    margin-left: -30vh;
+}
+
+.menu{
+    background-color: rgba(66, 52, 41, 0.9);
+    height: 100vh;
+    width: 4vw;
+    z-index: 900;
+    position: fixed;
+}
+
+nav p{
+    font-family: 'GenshinFont';
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    margin-top: -23vh;
+}
+
+nav ul li{
+    list-style: none;
+    margin-top: 4.5vh;
+    margin-left: -3.2vh;
+}
+
+.log{
+    margin-top: 60vh;
+}
