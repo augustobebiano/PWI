@@ -1,0 +1,278 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0%;
+    font-size: 16px;
+    margin: 0%;
+}
+
+body{
+    background-color: lightgrey;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-image: url("https://images.pexels.com/photos/796602/pexels-photo-796602.jpeg?cs=srgb&dl=pexels-ylanite-koppens-796602.jpg&fm=jpg");
+    height: 80vh;
+    background-size: cover;
+    background-position: bottom;
+}
+
+header div ul{
+    float: right;
+    text-transform: uppercase;
+    margin-top: 2.5vh;
+    margin-right: 6vh;
+}
+
+header div ul li{
+    display: inline-block;
+    border: 0.3vh white;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1vh;
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+}
+
+header div ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    margin-left: 6.25vw;
+    overflow: wrap;
+    max-width: 87.5vw;
+    padding-top: 35vh;
+    margin-top: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 0.2vh 0.2vh 0.5vh white;
+}
+
+.subtitle{
+    margin-top: 10vh;
+    color: white;
+    max-width: fit-content;
+    padding: 1.5vh;
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 0.4vh solid white;
+}
+
+.apps{
+    margin-top: 3vh;
+    background-color: white;
+    min-width: fit-content;
+    min-height: fit-content;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.75vw;
+}
+
+.img1{
+    height: 23vw;
+    width: 25vw;
+    background-image: url("https://images.pexels.com/photos/196655/pexels-photo-196655.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+}
+
+.img2{
+    height: 23vw;
+    width: 25vw;
+    background-image: url("https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+}
+
+.img3{
+    height: 23vw;
+    width: 25vw;
+    background-image: url("https://images.pexels.com/photos/67112/pexels-photo-67112.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+}
+
+.apptxt{
+    width: 25vw;
+    min-height: fit-content;
+    color: white;
+    background-color: dimgray;
+}
+
+.paddingtxt{
+    padding-left: 3.5%;
+    padding-top: 1.1vw;
+    padding-bottom: 1vw;
+    font-size: 0.95em;
+}
+
+.appmargin{
+    padding: 0.5vw;
+    display: inline-block;
+}
+
+.textblock{
+    background-color: white;
+    margin-top: 2.5vh;
+    padding: 1vw;
+    width: 78.3vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text1{
+    width: 76.3vw;
+    padding: 0.8vw;
+    padding-bottom: 0.6vw;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    background-color: rgba(211, 211, 211, 0.585);
+    font-weight: bold;
+    font-size: 1.4em;
+    border-bottom: 0.4vh solid dimgray;
+}
+
+.text2{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 1vh;
+}
+
+footer{
+    background-color: dimgray;
+    margin-top: 2.5vh;
+    color: white;
+    text-shadow: 0.2vh 0.2vh 0.5vh black;
+    padding: 4vh;
+    padding-bottom: 3vh;
+    text-align: center;
+    min-height: fit-content;
+}
+
+@media screen and (max-device-width: 34em){
+    header{
+        background-image: url("https://images.pexels.com/photos/796602/pexels-photo-796602.jpeg?cs=srgb&dl=pexels-ylanite-koppens-796602.jpg&fm=jpg");
+        height: 90vh;
+        background-size: cover;
+        background-position-x: right;
+        margin-top: 0vh;
+        padding-top: 0.1vh;
+    }
+    
+    header div ul{
+        margin-top: 0vh;
+        display: contents;
+    }
+    
+    header div ul li{
+        margin-top: 6vh;
+        margin-bottom: -5.75vh;
+        margin-left: 10vw;
+        max-width: 80vw;
+        display: block;
+        padding-left: 0vw;
+        padding-right: 0vw;
+        text-align: center;
+    }
+    
+    header div ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    h1{
+        margin-top: -23vh;
+        margin-left: 6.25vw;
+        overflow: wrap;
+        max-width: 87.5vw;
+    }
+
+    .subtitle{
+        color: white;
+        max-width: fit-content;
+        margin-top: 12.5vh;
+        padding: 1.5vh;
+        padding-left: 1.5vh;
+        padding-right: 1.5vh;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .apps{
+        height: fit-content;
+        background: none;
+    }
+
+    .img1{
+        height: 80vw;
+        width: 100%;
+    }
+    
+    .img2{
+        height: 80vw;
+        width: 100%;
+    }
+    
+    .img3{
+        height: 80vw;
+        width: 100%;
+    }
+
+    .apptxt{
+        width: 100%;
+    }
+
+    .paddingtxt{
+        padding: 2.5vw;
+        font-size: 1em;
+    }
+    
+    .appmargin{
+        width: 90.5%;
+        margin-bottom: 1.5%;
+        margin-top: 6%;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: fit-content;
+        display: inline-block;
+        border: 4vw solid white;
+    }
+
+    .textblock{
+        margin-top: 5.5vh;
+        width: 95vw;
+        margin-bottom: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .text1{
+        text-align: center;
+        width: 88vw;
+        margin-top: 1.5vh;
+        padding-bottom: 0.6vw;
+    }
+    
+    .text2{
+        margin-top: 2vh;
+        margin-left: 5vw;
+        margin-bottom: 2vh;
+    }
+}
+
+@media screen and (min-device-width: 34em) and (max-device-width: 60em){
+    h1{
+        color: red;
+    }
+}
