@@ -88,7 +88,6 @@ body{
     word-spacing: 0;
     text-decoration: none;
     float: left;
-    background-color: blue;
     height: 3em;
 }
 
@@ -101,7 +100,7 @@ body{
 }
 
 .teste ul li a:hover{
-    background-color: red;
+    background-color: rgba(82, 71, 62, 0.7);
 }
 
 .teste ul li img{
@@ -198,6 +197,7 @@ header div h2{
     height: 12vh;
     margin-left: 8vh;
     margin-top: 2.9vh;
+    filter: drop-shadow(0px 0px 2.5px rgba(255, 255, 255, 0.4));
 }
 
 .charname{
@@ -209,6 +209,7 @@ header div h2{
     position: absolute;
     margin-top: 6.5vh;
     clear: both;
+    text-shadow: 1.5px 1.5px 8px black;
 }
 
 .chartype{
@@ -220,6 +221,7 @@ header div h2{
     position: absolute;
     margin-top: 12vh;
     clear: both;
+    text-shadow: 1.5px 1.5px 8px black;
 }
 
 [class^=justifytxt]{/*Pegando todas aspan que tem atribuito class e inicia com icon*/
@@ -231,10 +233,10 @@ header div h2{
     margin-right: auto;
     
     margin-top: 65vh;
-    padding-top: 1.1vw;
-    padding-bottom: 1vw;
+    padding-top: 1.3vw;
+    padding-bottom: 1.5vw;
     padding-left: 4vw;
-    padding-right: 1.5vw;
+    padding-right: 2.2vw;
     line-height: 5.5vw;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
