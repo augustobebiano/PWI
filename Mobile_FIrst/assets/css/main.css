@@ -1,0 +1,327 @@
+/*Definindo a codificação do texto digitado neste documento*/
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'GenshinFont';
+    src: url('/assets/fonts/ja-jp.ttf');
+}
+
+/*Configurção padrão de fontes do site*/
+html{
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "GenshinFont";
+}
+
+/****** Formando o background do site ********** */
+
+
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+body{
+    background-image: url(https://leogaming.net/img/news/uploads/61b0cf33797b5cropped-1440-900-1189622.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/****** Formando o cabeçalho do site ********** */
+
+.menu{
+    background-color: rgba(66, 52, 41, 1);
+    height: 4.5em;
+    width: 100vw;
+    z-index: 900;
+    position: fixed;
+    top: 0%;
+}
+
+.menu nav a, .menu nav a:visited/*, .menu nav p, .menu nav ul, .menu nav ul li, .menu nav ul li a, .menu nav ul li a:visited*/{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-top: 0.3em;
+}
+
+.menu nav a{
+    font-family: "GenshinFont";
+    font-weight: normal;
+    font-size: 2em;
+    margin-left: 5vw;
+}
+
+.top{
+    margin-top: -0.7em;
+    word-spacing: calc(90vw - 4.5em);
+}
+
+.teste{
+    visibility: hidden;
+    float: left;
+    position: absolute;
+    margin-top: -2vh;
+    width: 100vw;
+    background-color: rgba(66, 52, 41, 0.7);
+    left: 0;
+}
+
+.teste ul{
+    list-style: none;
+    padding-left: 0em;
+    margin-top: 0.2em;
+    margin-bottom: 4.75em;
+}
+
+.teste ul li a{
+    font-family: Arial;
+    font-size: 20px;
+    word-spacing: 0;
+    text-decoration: none;
+    float: left;
+    background-color: blue;
+    height: 3em;
+}
+
+.teste ul li a p{
+    font-family: Arial;
+    font-size: 20px;
+    word-spacing: 0;
+    text-decoration: none;
+    float: right;
+}
+
+.teste ul li a:hover{
+    background-color: red;
+}
+
+.teste ul li img{
+    margin-right: 1em;
+    margin-top: 0.35em;
+    margin-bottom: 0.35em;
+    padding-top: 0.6em;
+}
+
+#btnControl{
+    display: none;
+}
+
+.btn{
+    display: inline-block;
+    font-size: 2em;
+}
+
+#btnControl:checked + label .teste{
+    visibility: visible;
+}
+
+.home{
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: center;
+    overflow: auto;
+}
+
+.region{
+    width: 95vw;
+    height: 95vw;
+    margin-left: -47.5vw;
+    left: 50%;
+    position: absolute;
+    margin-top: 27vh;
+}
+
+.region img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+
+header div h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 11.5vw;
+}
+
+header div h2{
+    text-align: center;
+    margin-bottom: -5.35vw;
+    font-weight: normal;
+    font-size: 6.4vw;
+    padding-top: 34.2vw;
+}
+
+/****** Formando a primeira seção ********** */
+
+[class^=charbg]{/*Pegando todas aspan que tem atribuito class e inicia com charbg*/
+    width: 100vw;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: right -3vh bottom -10vh;
+    background-size: cover;
+    scroll-snap-align: center;
+    overflow: auto;
+    background-repeat: no-repeat;
+}
+
+[class^=desc]{
+  margin-top: 10vh;
+}
+
+[class^=typesize]{
+    position: absolute;
+    white-space: nowrap;
+    margin-left: -9vw;
+    margin-top: -35vh;
+}
+
+.typesizeleft{
+    
+}
+
+.vision{
+    float: left;
+    position: absolute;
+    height: 12vh;
+    margin-left: 8vh;
+    margin-top: 2.9vh;
+}
+
+.charname{
+    font-family: 'GenshinFont';
+    font-size: 4.5vh;
+    font-weight: normal;
+    margin-left: 15vh;
+    float: left;
+    position: absolute;
+    margin-top: 6.5vh;
+    clear: both;
+}
+
+.chartype{
+    font-family: 'GenshinFont';
+    font-size: 2.3vh;
+    font-weight: normal;
+    margin-left: 16.5vh;
+    float: left;
+    position: absolute;
+    margin-top: 12vh;
+    clear: both;
+}
+
+[class^=justifytxt]{/*Pegando todas aspan que tem atribuito class e inicia com icon*/
+    text-align: justify;
+    font-family: Verdana;
+    font-size: 0.9em;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-top: 65vh;
+    padding-top: 1.1vw;
+    padding-bottom: 1vw;
+    padding-left: 4vw;
+    padding-right: 1.5vw;
+    line-height: 5.5vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: solid 0.4vh rgba(255, 255, 255, 0.8);
+}
+
+.justifytxtright{
+    
+}
+
+.charbgelement_geo{
+    background-color: rgba(235, 172, 57, 0.2);
+}
+
+.charbgelement_hydro{
+    background-color: rgba(46, 173, 227, 0.2);
+}
+
+.charbgelement_anemo{
+    background-color: rgba(97, 235, 191, 0.2);
+}
+
+.charbgimgright_zhongli{
+    background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20201123/2020112310504363585.png);
+    background-position: right -2vh bottom -10vh;
+}
+
+.charbgimg_tartaglia{
+    background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20201103/2020110321234137061.png);
+}
+
+.charbgimgright_xiao{
+    background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210122/2021012210173258296.png);
+    background-position: right 0 bottom -10vh;
+}
+
+
+/****** Formando a segunda seção ********** */
+
+
+/****** Formando a terceira seção ********** */
+
+
+/****** FormandoO RODAPE seção ********** */
+
+footer{
+    background-color: rgba(66, 52, 41, 1);
+    height: calc(((1045.5px / 80vw) * 1.3em ) + 4.5em);
+    width: 100vw;
+    z-index: 900;
+    bottom: 0%;
+    scroll-snap-align: end;
+}
+
+.copyright{
+    line-height: 1.3em;
+    width: 80vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.5em;
+}
+
+footer ul{
+    text-align: center;
+    font-size: 1.5em;
+    word-spacing: 0.5em;
+    overflow: auto;
+    margin-left: calc(50vw - 5em);
+}    
+
+footer ul, footer ul li, footer ul li a, footer ul li a:visited{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+/****** Aplicando a responsividade com media quary ********** */
+@media screen and (min-width: 48.75em){/* 780px = 780 / 16px*/
+   
+}
+
+
+@media screen and (min-width: 62.5em){ 
+    
+}
+
+   
+@media screen and (min-width: 74em){
+    
+}
