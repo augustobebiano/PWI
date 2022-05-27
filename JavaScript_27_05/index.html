@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <button onclick="sum()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mult()">*</button>
+    <button onclick="div()">/</button>
+    <script>
+        console.log('Duvido!!!');
+        let a;
+        
+        function sum(){
+            a = 0;
+            testar();
+        }
+        function sub(){
+            a = 1;
+            testar();
+        }
+        function mult(){
+            a = 2;
+            testar();
+        }
+        function div(){
+            a = 3;
+            testar();
+        }
+
+
+
+
+
+
+
+
+        let calc = [function(num1, num2){
+            return num1 + num2;
+        }, function(num1, num2){
+            return num1 - num2;
+        }, function(num1, num2){
+            return num1 * num2;
+        }, function(num1, num2){
+            return num1 / num2;
+        }]
+
+        function calculadora(num1, num2, operador){
+            return operador(num1, num2);
+            
+        }
+
+        function testar(){
+            let num1 = prompt("Digite um numero: ");
+            let num2 = prompt("Digite um numero: ");
+            num1 = parseInt(num1);
+            num2 = parseInt(num2);
+
+            const result = calculadora(num1, num2, calc[a]);
+
+            alert("O resultado é " + result);
+        }
+        console.log('O valor de a é ' + a);
+    </script>
+</body>
+</html>
