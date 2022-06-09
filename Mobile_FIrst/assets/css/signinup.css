@@ -39,6 +39,17 @@ body{
     margin-right: auto;
 }
 
+#error{
+    position: absolute;
+    background-color: rgba(165, 42, 42, 0.8);
+    width: 80%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: -10vh;
+}
+
 label:not(header label){
     color: rgba(66, 52, 41, 1);
     font-family: "GenshinFont";

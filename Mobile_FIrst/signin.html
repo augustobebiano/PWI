@@ -36,6 +36,7 @@
 
     <div class="home">
       <div class="loginbg">
+        <div id="error"></div>
         <form id="signin-form">
           <label for="id_username">Username:</label>
           <input type="username" placeholder="Username" name="username" id="username-field">
@@ -52,6 +53,16 @@
       const signinButton = document.getElementById("signin-form-submit");
       const signinErrorMsg = document.getElementById("signin-error-msg");
 
+      function onChangeObrigatorio(value){
+        const usuario = document.getElementById('usuarioid');
+        if (usuario.value != ''){
+            usuario.setAttribute("class","none");
+            const erros = document.getElementById('error');
+            erros.innerHTML = '';
+        }
+        console.log(value);
+      }
+
       signinButton.addEventListener("click", (e) => {
         e.preventDefault();
         const username = signinForm.username.value;
@@ -60,8 +71,9 @@
         if (username === "aluno" && password === "123456") {
           location.href = "liyue.html";
         } else {
-          alert("Invalid username and/or password");
-          location.reload();
+          error.innerHTML = '<P>Invalid username and/or password.</P>';
+          signinForm.username.value = '';
+          signinForm.password.value = '';
         }
       })
     </script>
