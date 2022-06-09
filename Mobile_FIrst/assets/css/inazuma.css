@@ -1,0 +1,51 @@
+body{
+    background-image: url(https://leogaming.net/img/news/uploads/61b0cf33797b5cropped-1440-900-1189622.jpg);
+    background-position: top;
+}
+
+header div h2{
+    padding-top: 28.2vw;
+}
+
+.charbgimgright_raiden{
+    background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210818/2021081811215958458.png);
+    background-position: right 0vh top 0vh;
+}
+
+.charbgimg_kazuha{
+    background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210622/2021062217460699632.png);
+    background-position: right 0 top 0vh;
+}
+
+.charbgimgright_ayato{
+    background-image: url(https://webstatic.hoyoverse.com/upload/contentweb/2022/03/22/96591f9444dd31afa795df741b890d48_4501703369399728.png);
+    background-position: right 0 top 0;
+}
+
+/****** Aplicando a responsividade com media quary ********** */
+@media screen and (min-width: 48.75em){/* 780px = 780 / 16px*/
+   
+    .region{
+        margin-top: 5vh;
+    }
+
+    header div h2{
+        padding-top: 28.86vh;
+    }
+
+    .charbgimgright_raiden{
+        background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210818/2021081811215218379.png);
+        background-position: right -18vh top 0vh;
+    }
+    
+    .charbgimg_kazuha{
+        background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210622/2021062217445558895.png);
+        background-position: right -8vh top 0vh;
+    }
+    
+    .charbgimgright_ayato{
+        background-image: url(https://webstatic.hoyoverse.com/upload/contentweb/2022/03/22/ccfce868ab7a930170b38b51347043a6_3309809781103300675.png);
+        background-position: right -10vh top 0;
+    }
+
+}

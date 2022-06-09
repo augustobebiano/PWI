@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="Augusto Bebiano"/>
+  <meta name="description" content="sign in screen"/>
+  <meta name="keywords" content="signin"/>
+  <link href="assets/icomoon/style.css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/normalize.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/signinup.css"/>
+  <title>Sign In | Zhongli Impact</title>
+</head>
+
+  <body> 
+    <header>
+      <div class="menu">
+        <nav>
+            <div class="top">
+              <a href="#">ZI</a>
+              <input type="checkbox" id="btnControl"/>
+              <label class="btn" for="btnControl"><p class="icon-menu"></p>
+                <div class="lista">
+                  <div><a href="#"><img src="https://www.genshin-impact.fr/wp-content/uploads/2020/07/UI_IconSmall_Talent_Small-24x24.png" alt=""><p>Team Maker</p></a></div>
+                  <div><a href="characters.html"><img src="https://www.genshin-impact.fr/wp-content/uploads/2020/07/UI_IconSmall_MailFrom-24x24.png" alt=""><p>Characters</p></a></div>
+                  <div><a href="weapons.html"><img src="https://www.genshin-impact.fr/wp-content/uploads/2020/07/UI_Icon_PhysicalAttackUp-24x24.png" alt=""><p>Weapons</p></a></div>
+                  <div><a href="#"><img src="https://www.genshin-impact.fr/wp-content/uploads/2020/07/UI_IconSmall_Feedback-24x24.png" alt=""><p>Sign in / up</p></a></div>
+                </div>
+              </label>
+            </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="home">
+      <div class="loginbg">
+        <form id="signup-form">
+          <label for="id_username">Username:</label>
+          <input type="username" placeholder="Username" name="username" id="username-field">
+          <label for="id_email">E-Mail:</label>
+          <input type="email" placeholder="E-Mail" name="email" id="email-field">
+          <label for="id_password">Password:</label>
+          <input type="password" placeholder="Password" name="password" id="password-field">
+          <input type="submit" value="Submit" id="signup-form-submit">  
+        </form>
+        <p><a href="signin.html">I already have an account</a></p>
+      </div>
+    </div>
+
+    <script>
+      const signupForm = document.getElementById("signup-form");
+      const signupButton = document.getElementById("signup-form-submit");
+      const signupErrorMsg = document.getElementById("signup-error-msg");
+
+      signupButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        const username = signupForm.username.value;
+        const email = signupForm.email.value;
+        const password = signupForm.password.value;
+
+        location.href = "liyue.html";
+      })
+    </script>
+
+    <footer>
+      <div class="copyright">
+        This website is not affiliated with HoYoverse.
+        Genshin Impact™, all assets files and game data are trademarks and copyrights by ©MiHoYo Co., Ltd.
+      </div>
+      <ul>
+        <li>
+          <a href="https://twitter.com/xhookez" class="icon-twitter"></a>
+        </li>
+        <li>
+          <a href="https://github.com/hookez" class="icon-github"></a>
+        </li>
+        <li>
+          <a href="https://instagram.com/augustobc_" class="icon-instagram"></a>
+        </li>
+        <li>
+          <a href="mailto:augustobcorrea@gmail.com" class="icon-mail4"></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,4 +1,5 @@
 /*Definindo a codificação do texto digitado neste documento*/
+
 @charset "UTF-8";
 
 @font-face {
@@ -7,6 +8,7 @@
 }
 
 /*Configurção padrão de fontes do site*/
+
 html{
     font-family: Arial;
     font-size: 16px;
@@ -18,7 +20,6 @@ h1, h2, h3, h4, h5, h6{
 
 /****** Formando o background do site ********** */
 
-
 html{
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
@@ -26,16 +27,20 @@ html{
 }
 
 body{
-    background-image: url(https://leogaming.net/img/news/uploads/61b0cf33797b5cropped-1440-900-1189622.jpg);
-    background-position: top;
+    overflow-x: hidden;
+    max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    overflow-x: hidden;
-    max-width: 100%;
 }
 
 /****** Formando o cabeçalho do site ********** */
+
+.home{
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+}
 
 .menu{
     background-color: rgba(66, 52, 41, 1);
@@ -50,22 +55,21 @@ body{
     display: inline-block;
     text-decoration: none;
     color: white;
-    margin-top: 0.3em;
 }
 
 .menu nav a{
     font-family: "GenshinFont";
     font-weight: normal;
     font-size: 2em;
-    margin-left: 5vw;
 }
 
 .top{
+    margin-left: 5vw;
     margin-top: -0.7em;
     word-spacing: calc(90vw - 4.5em);
 }
 
-.teste{
+.lista{
     visibility: hidden;
     float: left;
     position: absolute;
@@ -73,41 +77,48 @@ body{
     width: 100vw;
     background-color: rgba(66, 52, 41, 0.7);
     left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
 }
 
-.teste ul{
-    list-style: none;
-    padding-left: 0em;
-    margin-top: 0.2em;
-    margin-bottom: 4.75em;
+.lista div a{
+    margin-top: 0;
+    display: flex;
 }
 
-.teste ul li a{
-    font-family: Arial;
-    font-size: 20px;
+.lista div:nth-child(even) a{
+    margin-right: 5vw;
+    width: 40vw;
+}
+
+.lista div:nth-child(1) a, div:nth-child(2) a{
+    margin-top: 5vw;
+}
+
+.lista div:nth-child(3) a, div:nth-child(4) a{
+    margin-bottom: 5vw;
+}
+
+.lista div:nth-child(odd) a{
+    width: 45vw;
+    margin-left: 5vw;
+}
+
+.lista div a p{
+    font-family: "GenshinFont";
+    font-weight: normal;
+    font-size: 17px;
     word-spacing: 0;
+    line-height: 0;
     text-decoration: none;
-    float: left;
-    height: 3em;
 }
 
-.teste ul li a p{
-    font-family: Arial;
-    font-size: 20px;
-    word-spacing: 0;
-    text-decoration: none;
-    float: right;
-}
-
-.teste ul li a:hover{
-    background-color: rgba(82, 71, 62, 0.7);
-}
-
-.teste ul li img{
-    margin-right: 1em;
-    margin-top: 0.35em;
-    margin-bottom: 0.35em;
-    padding-top: 0.6em;
+.lista div img{
+    margin-top: 3px;
+    margin-right: 0.2em;
+    max-height: 24px;
 }
 
 #btnControl{
@@ -119,166 +130,9 @@ body{
     font-size: 2em;
 }
 
-#btnControl:checked + label .teste{
+#btnControl:checked + label .lista{
     visibility: visible;
 }
-
-.home{
-    width: 100vw;
-    height: 100vh;
-    scroll-snap-align: center;
-    overflow: auto;
-}
-
-.region{
-    width: 95vw;
-    height: 95vw;
-    margin-left: -47.5vw;
-    left: 50%;
-    position: absolute;
-    margin-top: 27vh;
-}
-
-.region img{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    opacity: 0.6;
-}
-
-header div h1{
-    text-align: center;
-    font-weight: normal;
-    font-size: 11.5vw;
-}
-
-header div h2{
-    text-align: center;
-    margin-bottom: -5.35vw;
-    font-weight: normal;
-    font-size: 6.4vw;
-    padding-top: 34.2vw;
-}
-
-/****** Formando a primeira seção ********** */
-
-[class^=charbg]{/*Pegando todas aspan que tem atribuito class e inicia com charbg*/
-    width: 100vw;
-    height: 100vh;
-    margin-left: auto;
-    margin-right: auto;
-    background-position: right -3vh bottom -10vh;
-    background-size: cover;
-    scroll-snap-align: center;
-    overflow: auto;
-    background-repeat: no-repeat;
-}
-
-[class^=desc]{
-  margin-top: 10vh;
-}
-
-[class^=typesize]{
-    position: absolute;
-    white-space: nowrap;
-    margin-left: -9vw;
-    margin-top: -35vh;
-}
-
-.typesizeleft{
-    
-}
-
-.vision{
-    float: left;
-    position: absolute;
-    height: 12vh;
-    margin-left: 8vh;
-    margin-top: 2.9vh;
-    filter: drop-shadow(0px 0px 2.5px rgba(255, 255, 255, 0.4));
-}
-
-.charname{
-    font-family: 'GenshinFont';
-    font-size: 4.5vh;
-    font-weight: normal;
-    margin-left: 15vh;
-    float: left;
-    position: absolute;
-    margin-top: 6.5vh;
-    clear: both;
-    text-shadow: 1.5px 1.5px 8px black;
-}
-
-.chartype{
-    font-family: 'GenshinFont';
-    font-size: 2.3vh;
-    font-weight: normal;
-    margin-left: 16.5vh;
-    float: left;
-    position: absolute;
-    margin-top: 12vh;
-    clear: both;
-    text-shadow: 1.5px 1.5px 8px black;
-}
-
-[class^=justifytxt]{/*Pegando todas aspan que tem atribuito class e inicia com icon*/
-    text-align: justify;
-    font-family: Verdana;
-    font-size: 0.9em;
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
-    
-    margin-top: 65vh;
-    padding-top: 1.3vw;
-    padding-bottom: 1.5vw;
-    padding-left: 4vw;
-    padding-right: 2.2vw;
-    line-height: 5.5vw;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-top: solid 0.4vh rgba(255, 255, 255, 0.8);
-}
-
-.justifytxtright{
-    
-}
-
-.charbgelement_geo{
-    background-color: rgba(235, 172, 57, 0.2);
-}
-
-.charbgelement_hydro{
-    background-color: rgba(46, 173, 227, 0.2);
-}
-
-.charbgelement_anemo{
-    background-color: rgba(97, 235, 191, 0.2);
-}
-
-.charbgimgright_zhongli{
-    background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20201123/2020112310504363585.png);
-    background-position: right -2vh bottom -10vh;
-}
-
-.charbgimg_tartaglia{
-    background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20201103/2020110321234137061.png);
-}
-
-.charbgimgright_xiao{
-    background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210122/2021012210173258296.png);
-    background-position: right 0 bottom -10vh;
-}
-
-
-/****** Formando a segunda seção ********** */
-
-
-/****** Formando a terceira seção ********** */
-
 
 /****** FormandoO RODAPE seção ********** */
 
@@ -313,17 +167,46 @@ footer ul, footer ul li, footer ul li a, footer ul li a:visited{
     text-decoration: none;
     color: white;
 }
+
 /****** Aplicando a responsividade com media quary ********** */
+
 @media screen and (min-width: 48.75em){/* 780px = 780 / 16px*/
-   
-}
-
-
-@media screen and (min-width: 62.5em){ 
     
-}
+    .menu{
+        height: 100vh;
+        width: 4.5em;
+        top: 0%;
+    }
 
-   
-@media screen and (min-width: 74em){
+    .top{
+        margin-left: 1.25em;
+        margin-top: 3vh;
+    }
     
+    .lista{
+        margin-top: 0vh;
+        top: 0;
+        width: 8em;
+        margin-left: 72px;
+        left: 0;
+    }
+    
+    .lista div:nth-child(even) a, .lista div:nth-child(odd) a{
+        margin-right: 0vw;
+        margin-left: 0.8em;
+        width: 15vw;
+    }
+    
+    .lista div:nth-child(1) a, div:nth-child(2) a, .lista div:nth-child(3) a, div:nth-child(4) a{
+        margin-top: 6.6vh;
+        margin-bottom: 0vw;
+    }
+
+    .lista div:nth-child(1) a{
+        margin-top: 3.3vh;
+    }
+    
+    div:nth-child(4) a{
+        margin-bottom: 3.3vh;
+    }
 }

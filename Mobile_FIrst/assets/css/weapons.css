@@ -1,0 +1,105 @@
+.home{
+  scroll-snap-align: center;
+}
+
+.region{
+  width: 95vw;
+  height: 95vw;
+  margin-left: -47.5vw;
+  left: 50%;
+  position: absolute;
+  margin-top: 27vh;
+}
+
+.region img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+  z-index: -10;
+}
+
+header div h1{
+  text-align: center;
+  font-weight: normal;
+  font-size: 11.5vw;
+}
+
+header div h2{
+  text-align: center;
+  margin-bottom: -5.35vw;
+  font-weight: normal;
+  font-size: 6.4vw;
+  padding-top: 34.2vw;
+}
+
+body{
+  background-image: url(https://preview.redd.it/gkl6nyq0wo661.jpg?auto=webp&s=3669721703b64d9a2a64f3bfdb687579cbdbafe2);
+  background-position: center;
+}
+
+/****** Formando a primeira seção ********** */
+
+[class^=wepbg]{/*Pegando todas aspan que tem atribuito class e inicia com charbg*/
+  width: 100vw;
+  height: calc(100vh - 4.5em);
+  margin-left: auto;
+  margin-right: auto;
+  background-position: right 0 bottom 0;
+  background-size: cover;
+  scroll-snap-align: end;
+  overflow: auto;
+  background-repeat: no-repeat;
+}
+
+[class^=justifytxt]{/*Pegando todas aspan que tem atribuito class e inicia com icon*/
+  text-align: justify;
+  font-family: Verdana;
+  font-size: 0.9em;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  
+  margin-top: calc(55vh - 4.5em);
+  padding-top: 1.1vw;
+  padding-bottom: 1vw;
+  padding-left: 4vw;
+  padding-right: 1.5vw;
+  line-height: 5.5vw;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: solid 0.4vh rgba(255, 255, 255, 0.8);
+}
+
+[class^=wepgrid]{
+
+}
+
+.justifytxtright{
+  
+}
+
+/****** Formando a segunda seção ********** */
+
+
+/****** Formando a terceira seção ********** */
+
+
+/****** FormandoO RODAPE seção ********** */
+
+/****** Aplicando a responsividade com media quary ********** */
+@media screen and (min-width: 48.75em){/* 780px = 780 / 16px*/
+ 
+}
+
+
+@media screen and (min-width: 62.5em){ 
+  
+}
+
+ 
+@media screen and (min-width: 74em){
+  
+}
