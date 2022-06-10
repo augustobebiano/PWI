@@ -5,10 +5,9 @@
   background-position: center 0vw center 5vh;
 }
 
-.wepbg_thunderingpulse{
-  background-image: url(https://www.genshin-impact.fr/wp-content/uploads/2021/11/w_4407_gacha.png);
-  background-position: left 5vw top 5vh;
-  background-size: 70vw auto;
+.img_thunderingpulse{
+  background-image: url(/assets/images/Weapon_Thundering_Pulse_2nd.png);
+  background-position: center 0vw center 5vh;
 }
 
 /****** Formando a segunda seção ********** */
@@ -25,13 +24,13 @@
   .img_polarstar{
     background-image: url(/assets/images/Weapon_Polar_Star_Wish.png);
     background-position: top -5vw left 5vh;
-    background-size: 40vh auto;
+    background-size: 25vw auto;
   }
   
-  .wepbg_thunderingpulse{
-    background-image: url(https://www.genshin-impact.fr/wp-content/uploads/2021/11/w_4407_gacha.png);
-    background-position: left 5vw top 5vh;
-    background-size: 70vw auto;
+  .img_thunderingpulse{
+    background-image: url(/assets/images/Weapon_Thundering_Pulse_Wish.png);
+    background-position: top -1vw left 18vh;
+    background-size: 25vw auto;
   }
 
 }

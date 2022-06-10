@@ -27,17 +27,17 @@ body{
 }
 
 .region_mondstadt{
-    background-image: url(https://lh3.googleusercontent.com/VNmAFduFU0XOid66nN3np8sMwPt2UkKccFESxocLseu-aZ_7GcWMw8WlCSwGbd7D9-C3nK5dHSheoRhresSq=w2940-h6354-rw);
+    background-image: url(/assets/images/mondstadt.png);
     background-position: 50% 40%;
 }
 
 .region_liyue{
-    background-image: url(https://lh3.googleusercontent.com/njeFN-LDd6WWKm33CH9hSaR5zvpm53IuC0oUBAsjPjFa7XhfIDxPGS-zR1fyMK7KHmwGX3kMCl2xp7qCGHuA=w1960-h4236-rw);
+    background-image: url(/assets/images/liyue.png);
     background-position: 50% 90%;
 }
 
 .region_inazuma{
-    background-image: url(https://lh5.googleusercontent.com/796Gx6jK2_bGQ69V5uYyAzVn3lKqcgalnm1ziMAbS6TqRpnXPcL-YoGDboOqCb656tnUuIhmKcmSvpyLq_wL=w1960-h4236-rw);
+    background-image: url(/assets/images/inazuma.png);
     background-position: 50% 70%;
 }
 
