@@ -1,6 +1,15 @@
-
-
 /****** Formando a primeira seção ********** */
+
+.img_polarstar{
+  background-image: url(/assets/images/Weapon_Polar_Star_2nd.png);
+  background-position: center 0vw center 5vh;
+}
+
+.wepbg_thunderingpulse{
+  background-image: url(https://www.genshin-impact.fr/wp-content/uploads/2021/11/w_4407_gacha.png);
+  background-position: left 5vw top 5vh;
+  background-size: 70vw auto;
+}
 
 /****** Formando a segunda seção ********** */
 
@@ -9,28 +18,20 @@
 
 
 /****** FormandoO RODAPE seção ********** */
-.wepbgright_polarstar{
-  background-image: url(https://www.genshin-impact.fr/wp-content/uploads/2021/11/w_4408_gacha.png);
-  background-position: left 0vw top 5vh;
-  background-size: 78vw auto;
-}
 
-.wepbg_thunderingpulse{
-  background-image: url(https://www.genshin-impact.fr/wp-content/uploads/2021/11/w_4407_gacha.png);
-  background-position: left 5vw top 5vh;
-  background-size: 70vw auto;
-}
 /****** Aplicando a responsividade com media quary ********** */
 @media screen and (min-width: 48.75em){/* 780px = 780 / 16px*/
- 
-}
 
-
-@media screen and (min-width: 62.5em){ 
+  .img_polarstar{
+    background-image: url(/assets/images/Weapon_Polar_Star_Wish.png);
+    background-position: top -5vw left 5vh;
+    background-size: 40vh auto;
+  }
   
-}
+  .wepbg_thunderingpulse{
+    background-image: url(https://www.genshin-impact.fr/wp-content/uploads/2021/11/w_4407_gacha.png);
+    background-position: left 5vw top 5vh;
+    background-size: 70vw auto;
+  }
 
- 
-@media screen and (min-width: 74em){
-  
 }
