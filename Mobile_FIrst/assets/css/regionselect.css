@@ -1,0 +1,100 @@
+/****** Formando o background do site ********** */
+
+html{
+    scroll-snap-type: none;
+    max-width: 100%;
+}
+
+body{
+    background-position: center;
+}
+
+/****** Formando a primeira seção ********** */
+
+.regions{
+    margin-top: 4.5em;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+[class^=region_]{
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
+    height: 100%;
+    width: 100%;
+}
+
+.region_mondstadt{
+    background-image: url(https://lh3.googleusercontent.com/VNmAFduFU0XOid66nN3np8sMwPt2UkKccFESxocLseu-aZ_7GcWMw8WlCSwGbd7D9-C3nK5dHSheoRhresSq=w2940-h6354-rw);
+    background-position: 50% 40%;
+}
+
+.region_liyue{
+    background-image: url(https://lh3.googleusercontent.com/njeFN-LDd6WWKm33CH9hSaR5zvpm53IuC0oUBAsjPjFa7XhfIDxPGS-zR1fyMK7KHmwGX3kMCl2xp7qCGHuA=w1960-h4236-rw);
+    background-position: 50% 90%;
+}
+
+.region_inazuma{
+    background-image: url(https://lh5.googleusercontent.com/796Gx6jK2_bGQ69V5uYyAzVn3lKqcgalnm1ziMAbS6TqRpnXPcL-YoGDboOqCb656tnUuIhmKcmSvpyLq_wL=w1960-h4236-rw);
+    background-position: 50% 70%;
+}
+
+.regions a{
+    height: calc((100vh - 16.2em) / 3);
+    text-decoration: none;
+}
+
+.regions a div p{
+    font-family: 'GenshinFont';
+    font-size: 4.2vh;
+    font-weight: normal;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(66, 52, 41, 1);
+    max-width: max-content;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/****** FormandoO RODAPE seção ********** */
+
+footer{
+    position: fixed;
+}
+
+/****** Aplicando a responsividade com media quary ********** */
+
+@media screen and (min-width: 48.75em){/* 780px = 780 / 16px*/
+
+    .regions{
+        margin-top: 0;
+        margin-left: 4.5em;
+        width: calc(100vw - 4.5em);
+        flex-direction: row;
+    }
+
+    .region_mondstadt{
+        background-position: 50% 40%;
+    }
+    
+    .region_liyue{
+        background-position: 40% 90%;
+    }
+    
+    .region_inazuma{
+        background-position: 50% 70%;
+    }
+
+    .regions a{
+        height: calc((100vh - 7.8em));
+        width: calc((100vw - 4.5em) / 3);
+        text-decoration: none;
+    }
+
+    .regions a div p{
+        font-size: 8.2vh;
+        margin-top: 15vh;
+    }
+}

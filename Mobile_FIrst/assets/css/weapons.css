@@ -47,18 +47,23 @@ body{
   height: calc(100vh - 4.5em);
   margin-left: auto;
   margin-right: auto;
-  background-position: right 0 bottom 0;
-  background-size: cover;
   scroll-snap-align: end;
   overflow: auto;
   background-repeat: no-repeat;
+}
+
+.weptxt{
+  background-color: gray;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 [class^=justifytxt]{/*Pegando todas aspan que tem atribuito class e inicia com icon*/
   text-align: justify;
   font-family: Verdana;
   font-size: 0.9em;
-  width: 80vw;
+  width: 90vw;
   margin-left: auto;
   margin-right: auto;
   
@@ -74,6 +79,23 @@ body{
 }
 
 [class^=wepgrid]{
+  background-color: brown;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 2px salmon;
+  display: grid;
+  grid-template-columns: 20vw 15vw 20vw 15vw;
+}
+
+[class^=wepgrid] div{
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+[class^=wepgrid] p{
+  padding-left: 2vw;
+  padding-right: -5vw;
 
 }
 
@@ -81,25 +103,9 @@ body{
   
 }
 
-/****** Formando a segunda seção ********** */
-
-
-/****** Formando a terceira seção ********** */
-
-
-/****** FormandoO RODAPE seção ********** */
-
 /****** Aplicando a responsividade com media quary ********** */
 @media screen and (min-width: 48.75em){/* 780px = 780 / 16px*/
  
-}
 
 
-@media screen and (min-width: 62.5em){ 
-  
-}
-
- 
-@media screen and (min-width: 74em){
-  
 }

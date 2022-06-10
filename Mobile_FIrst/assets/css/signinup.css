@@ -64,7 +64,7 @@ input[type=username], input[type=password], input[type=email]{
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid rgba(66, 52, 41, 1);;
+    border: 1px solid rgba(66, 52, 41, 1);
     border-radius: 4px;
     box-sizing: border-box;
 }

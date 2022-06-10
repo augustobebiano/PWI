@@ -48,36 +48,6 @@
       </div>
     </div>
 
-    <script>
-      const signinForm = document.getElementById("signin-form");
-      const signinButton = document.getElementById("signin-form-submit");
-      const signinErrorMsg = document.getElementById("signin-error-msg");
-
-      function onChangeObrigatorio(value){
-        const usuario = document.getElementById('usuarioid');
-        if (usuario.value != ''){
-            usuario.setAttribute("class","none");
-            const erros = document.getElementById('error');
-            erros.innerHTML = '';
-        }
-        console.log(value);
-      }
-
-      signinButton.addEventListener("click", (e) => {
-        e.preventDefault();
-        const username = signinForm.username.value;
-        const password = signinForm.password.value;
-
-        if (username === "aluno" && password === "123456") {
-          location.href = "liyue.html";
-        } else {
-          error.innerHTML = '<P>Invalid username and/or password.</P>';
-          signinForm.username.value = '';
-          signinForm.password.value = '';
-        }
-      })
-    </script>
-
     <footer>
       <div class="copyright">
         This website is not affiliated with HoYoverse.

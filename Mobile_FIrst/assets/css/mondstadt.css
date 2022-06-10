@@ -1,10 +1,10 @@
 body{
-    background-image: url(https://leogaming.net/img/news/uploads/61b0cf33797b5cropped-1440-900-1189622.jpg);
-    background-position: top;
+    background-image: url(https://lh3.googleusercontent.com/VNmAFduFU0XOid66nN3np8sMwPt2UkKccFESxocLseu-aZ_7GcWMw8WlCSwGbd7D9-C3nK5dHSheoRhresSq=w2940-h6354-rw);
+    background-position: 20%;
 }
 
 .charbgimgright_venti{
-    background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20191122/2019112211143037621.png   );
+    background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20191122/2019112211143037621.png);
     background-position: right 0vh top 0vh;
     background-size: 70vh;
 }
@@ -31,14 +31,22 @@ body{
 /****** Aplicando a responsividade com media quary ********** */
 @media screen and (min-width: 48.75em){/* 780px = 780 / 16px*/
    
-}
-
-
-@media screen and (min-width: 62.5em){ 
+    .charbgimgright_venti{
+        background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20191122/2019112210305833310.png);
+        background-position: right -45vh top 0vh;
+        background-size: auto 100vh;
+    }
     
-}
-
-   
-@media screen and (min-width: 74em){
+    .charbgimg_albedo{
+        background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20201216/2020121611204969580.png);
+        background-position: right -15vh top 0vh;
+        background-size: auto 100vh;
+    }
     
+    .charbgimgright_eula{
+        background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210510/2021051011361876265.png);
+        background-position: right 0 top 0vh;
+        background-size: auto 100vh;
+    }
+
 }
