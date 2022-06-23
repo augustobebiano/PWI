@@ -84,7 +84,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   width: max-content;
-  max-width: 80vw;
+  max-width: 50vw;
   text-align: center;
 }
 
@@ -148,6 +148,11 @@ table tr:nth-child(2) th:nth-child(odd){
 /****** Aplicando a responsividade com media quary ********** */
 @media screen and (min-width: 48.75em){/* 780px = 780 / 16px*/
 
+  .center{
+    margin-left: 30vw;
+    width: 51vw;
+  }
+
   .home{
     position: absolute;
   }
@@ -187,7 +192,7 @@ table tr:nth-child(2) th:nth-child(odd){
   
   [class^=img_]{
     float: left;
-    margin-top: -7.2vw;
+    margin-top: -12vw;
     margin-left: 2vw;
     height: 41vw;
     width: 25vw;
@@ -205,12 +210,11 @@ table tr:nth-child(2) th:nth-child(odd){
 
   
   .wepname{
-    padding-top: 3.5vh;
+    padding-top: 4vh;
     font-family: 'GenshinFont';
-    font-size: 2.35vw;
+    font-size: 2.85vw;
     font-weight: normal;
     margin-top: 4vh;
-    margin-left: 30vw;
     width: max-content;
   }
   
