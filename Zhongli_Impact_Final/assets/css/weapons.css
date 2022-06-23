@@ -200,7 +200,7 @@ table tr:nth-child(2) th:nth-child(odd){
     width: calc(90vw - 5.5em);
     margin-left: 5vw;
     margin-top: 5vh;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(20, 19, 33, 0.4);
   }
 
   

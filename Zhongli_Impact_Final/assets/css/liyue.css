@@ -24,17 +24,17 @@ body{
   
     .charbgimgright_zhongli{
         background-image: url(https://uploadstatic-sea.hoyoverse.com/contentweb/20201123/2020112310503599073.png);
-        background-position: right -20vh top 0vh;
+        background-position: right -100% top 0vh;
     }
     
     .charbgimg_tartaglia{
         background-image: url(https://uploadstatic-sea.hoyoverse.com/contentweb/20201103/2020110321160453386.png);
-        background-position: right -8vh top 0vh;
+        background-position: right -80% top 0vh;
     }
     
     .charbgimgright_xiao{
         background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210122/2021012215393946486.png);
-        background-position: right 0 top 0vh;
+        background-position: right -20% top 0vh;
     }
 
 }

@@ -35,18 +35,23 @@ header div h2{
     padding-top: 34.2vw;
 }
 
+.center{
+    height: calc(100vh - 4.5em);
+    scroll-snap-align: end;
+}
+
 /****** Formando a primeira seção ********** */
 
 [class^=charbg]{/*Pegando todas aspan que tem atribuito class e inicia com charbg*/
     width: 100vw;
-    height: calc(100vh - 4.5em);
-    margin-left: auto;
-    margin-right: auto;
+    height: calc(94vh - 4.5em);
+    float: left;
+    margin-top: 3vh;
     background-position: right 0 bottom 0;
     background-size: cover;
-    scroll-snap-align: end;
     overflow: auto;
     background-repeat: no-repeat;
+    background-color: rgba(20, 19, 33, 0.4);
 }
 
 [class^=desc]{
@@ -69,6 +74,7 @@ header div h2{
 
 .charname{
     font-family: 'GenshinFont';
+    text-shadow: 1px 1px 3px rgba(66, 52, 41, 1);
     font-size: 4.2vh;
     font-weight: normal;
     margin-left: 15vh;
@@ -87,6 +93,7 @@ header div h2{
 
 .chartype{
     font-family: 'GenshinFont';
+    text-shadow: 1px 1px 3px rgba(66, 52, 41, 1);
     font-size: 2.3vh;
     font-weight: normal;
     margin-left: 16.5vh;
@@ -116,33 +123,42 @@ header div h2{
     border-top: solid 0.4vh rgba(255, 255, 255, 0.8);
 }
 
+/*
+
 .charbgelement_geo{
-    background-color: rgba(235, 172, 57, 0.2);
+    background-color: rgba(235, 172, 57, 0.3);
 }
 
 .charbgelement_hydro{
-    background-color: rgba(46, 173, 227, 0.2);
+    background-color: rgba(46, 173, 227, 0.3);
 }
 
 .charbgelement_anemo{
-    background-color: rgba(97, 235, 191, 0.2);
+    background-color: rgba(97, 235, 191, 0.3);
 }
 
 .charbgelement_pyro{
-    background-color: rgba(234, 108, 44, 0.2);
+    background-color: rgba(234, 108, 44, 0.3);
 }
 
 .charbgelement_electro{
-    background-color: rgba(204, 147, 249, 0.2);
+    background-color: rgba(204, 147, 249, 0.3);
 }
 
 .charbgelement_cryo{
-    background-color: rgba(140, 242, 251, 0.2);
+    background-color: rgba(140, 242, 251, 0.3);
 }
+
+*/
 
 /****** Aplicando a responsividade com media quary ********** */
 
 @media screen and (min-width: 48.75em){/* 780px = 780 / 16px*/
+
+    .center{
+        height: 100vh;
+        scroll-snap-align: start;
+    }
 
     .region{
         width: 95vh;
@@ -165,11 +181,13 @@ header div h2{
     /****** Formando a primeira seção ********** */
 
     [class^=charbg]{/*Pegando todas aspan que tem atribuito class e inicia com charbg*/
-        width: calc(100vw - 4.5em);
-        height: 100vh;
-        margin-left: 4.5em;
+        margin-top: 5vh;
+        height: 90vh;
+        width: calc(90vw - 5.5em);
+        margin-left: calc(5vw + 4.5em);
         background-position: left 0 bottom 0;
-        background-size: auto 100vh;
+        background-size: auto 90vh;
+        margin-bottom: 5vh;
     }
 
     [class^=desc]{
@@ -177,10 +195,10 @@ header div h2{
     }
 
     [class^=typesize]{
-        transform: scale(2);
+        transform: scale(1.7);
         transform-origin: 0 0;
         left: 0;
-        margin-left: 1.5em;
+        margin-left: 8em;
         margin-top: -40vh;
     }
     

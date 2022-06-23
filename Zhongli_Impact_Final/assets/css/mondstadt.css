@@ -33,20 +33,20 @@ body{
    
     .charbgimgright_venti{
         background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20191122/2019112210305833310.png);
-        background-position: right -45vh top 0vh;
-        background-size: auto 100vh;
+        background-position: right 250% top 0vh;
+        background-size: auto 90vh;
     }
     
     .charbgimg_albedo{
         background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20201216/2020121611204969580.png);
-        background-position: right -15vh top 0vh;
-        background-size: auto 100vh;
+        background-position: right -100% top 0vh;
+        background-size: auto 90vh;
     }
     
     .charbgimgright_eula{
         background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210510/2021051011361876265.png);
-        background-position: right 0 top 0vh;
-        background-size: auto 100vh;
+        background-position: right -60% top 0vh;
+        background-size: auto 90vh;
     }
 
 }
