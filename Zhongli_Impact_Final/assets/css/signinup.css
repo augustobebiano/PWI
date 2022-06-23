@@ -1,0 +1,121 @@
+/****** Formando o background do site ********** */
+
+html{
+    scroll-snap-type: none;
+    max-width: 100%;
+}
+
+body{
+    background-image: url(https://preview.redd.it/gkl6nyq0wo661.jpg?auto=webp&s=3669721703b64d9a2a64f3bfdb687579cbdbafe2);
+    background-position: center;
+}
+
+/****** Formando a primeira seção ********** */
+
+.loginbg{
+    width: 75vw;
+    max-width: 25em;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    position: absolute;
+    top: 42%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: rgb(235, 209, 189);
+    padding: 2vw;
+}
+
+.loginbg a, .loginbg a:visited{
+    text-decoration: underline;
+    font-weight: lighter;
+    font-size: 0.8em;
+    color: rgba(66, 52, 41, 1);
+}
+
+.loginbg p{
+    width: max-content;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#error{
+    position: absolute;
+    background-color: rgba(165, 42, 42, 0.8);
+    width: 80%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: -10vh;
+}
+
+label:not(header label){
+    color: rgba(66, 52, 41, 1);
+    font-family: "GenshinFont";
+    font-weight: bold;
+    font-size: 1.4em;
+    text-shadow: 1px 1px 2px white;
+}
+
+input[type=username], input[type=password], input[type=email]{
+    font-weight: lighter;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgba(66, 52, 41, 1);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 100%;
+    background-color: rgba(66, 52, 41, 1);
+    color: white;
+    font-family: "GenshinFont";
+    font-weight: lighter;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+header div h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 11.5vw;
+}
+
+header div h2{
+    text-align: center;
+    margin-bottom: -5.35vw;
+    font-weight: normal;
+    font-size: 6.4vw;
+    padding-top: 34.2vw;
+}
+
+/****** FormandoO RODAPE seção ********** */
+
+footer{
+    position: fixed;
+}
+
+/****** Aplicando a responsividade com media quary ********** */
+
+@media screen and (min-width: 48.75em){/* 780px = 780 / 16px*/
+
+    .loginbg{
+        width: 35vw;
+        top: 45%;
+    }
+
+    .loginbg a, .loginbg a:visited{
+        font-size: 1.1em;
+    }
+
+}

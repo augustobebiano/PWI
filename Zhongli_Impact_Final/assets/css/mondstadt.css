@@ -1,0 +1,52 @@
+body{
+    background-image: url(/assets/images/mondstadt.png);
+    background-position: 20%;
+}
+
+.charbgimgright_venti{
+    background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20191122/2019112211143037621.png);
+    background-position: right 0vh top 0vh;
+    background-size: 70vh;
+}
+
+.charbgimg_albedo{
+    background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20201216/2020121611271023422.png);
+    background-position: right 0 top 0vh;
+    background-size: 60vh;
+}
+
+.charbgimgright_eula{
+    background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210510/2021051011383243523.png);
+    background-position: right 0 top 0vh;
+    background-size: 60vh;
+}
+
+
+/****** Formando a segunda seção ********** */
+
+
+/****** Formando a terceira seção ********** */
+
+
+/****** Aplicando a responsividade com media quary ********** */
+@media screen and (min-width: 48.75em){/* 780px = 780 / 16px*/
+   
+    .charbgimgright_venti{
+        background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20191122/2019112210305833310.png);
+        background-position: right -45vh top 0vh;
+        background-size: auto 100vh;
+    }
+    
+    .charbgimg_albedo{
+        background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20201216/2020121611204969580.png);
+        background-position: right -15vh top 0vh;
+        background-size: auto 100vh;
+    }
+    
+    .charbgimgright_eula{
+        background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210510/2021051011361876265.png);
+        background-position: right 0 top 0vh;
+        background-size: auto 100vh;
+    }
+
+}

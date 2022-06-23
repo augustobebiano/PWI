@@ -1,0 +1,202 @@
+.home{
+    scroll-snap-align: center;
+}
+
+.region{
+    width: 95vw;
+    height: 95vw;
+    margin-left: -47.5vw;
+    left: 50%;
+    position: absolute;
+    margin-top: 27vh;
+}
+
+.region img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+    z-index: -10;
+}
+
+header div h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 11.5vw;
+}
+
+header div h2{
+    text-align: center;
+    margin-bottom: -5.35vw;
+    font-weight: normal;
+    font-size: 6.4vw;
+    padding-top: 34.2vw;
+}
+
+/****** Formando a primeira seção ********** */
+
+[class^=charbg]{/*Pegando todas aspan que tem atribuito class e inicia com charbg*/
+    width: 100vw;
+    height: calc(100vh - 4.5em);
+    margin-left: auto;
+    margin-right: auto;
+    background-position: right 0 bottom 0;
+    background-size: cover;
+    scroll-snap-align: end;
+    overflow: auto;
+    background-repeat: no-repeat;
+}
+
+[class^=desc]{
+  margin-top: calc(10vh - 4.5em);
+}
+
+[class^=typesize]{
+    position: absolute;
+    margin-left: -12.5vw;
+    margin-top: calc(-15vh - 4.5em);
+}
+
+.vision{
+    float: left;
+    position: absolute;
+    height: 12vh;
+    margin-left: 8vh;
+    margin-top: 2.9vh;
+}
+
+.charname{
+    font-family: 'GenshinFont';
+    font-size: 4.2vh;
+    font-weight: normal;
+    margin-left: 15vh;
+    float: left;
+    position: relative;
+    margin-top: 1.5vh;
+    clear: both;
+    width: 73vw;
+    height: 10vh;
+}
+
+.bottomname{
+    position: absolute;
+    bottom: 0;
+}
+
+.chartype{
+    font-family: 'GenshinFont';
+    font-size: 2.3vh;
+    font-weight: normal;
+    margin-left: 16.5vh;
+    float: left;
+    position: absolute;
+    margin-top: 12vh;
+    clear: both;
+    white-space: nowrap;
+}
+
+[class^=justifytxt]{/*Pegando todas aspan que tem atribuito class e inicia com icon*/
+    text-align: justify;
+    font-family: Verdana;
+    font-size: 0.9em;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-top: calc(55vh - 4.5em);
+    padding-top: 1.1vw;
+    padding-bottom: 1vw;
+    padding-left: 4vw;
+    padding-right: 1.5vw;
+    line-height: 5.5vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: solid 0.4vh rgba(255, 255, 255, 0.8);
+}
+
+.charbgelement_geo{
+    background-color: rgba(235, 172, 57, 0.2);
+}
+
+.charbgelement_hydro{
+    background-color: rgba(46, 173, 227, 0.2);
+}
+
+.charbgelement_anemo{
+    background-color: rgba(97, 235, 191, 0.2);
+}
+
+.charbgelement_pyro{
+    background-color: rgba(234, 108, 44, 0.2);
+}
+
+.charbgelement_electro{
+    background-color: rgba(204, 147, 249, 0.2);
+}
+
+.charbgelement_cryo{
+    background-color: rgba(140, 242, 251, 0.2);
+}
+
+/****** Aplicando a responsividade com media quary ********** */
+
+@media screen and (min-width: 48.75em){/* 780px = 780 / 16px*/
+
+    .region{
+        width: 95vh;
+        height: 95vh;
+        margin-left: calc((100vw - 95vh) / 2);
+        left: 0%;
+        margin-top: 2.5vh;
+    }
+    
+    header div h1{
+        font-size: 11vh;
+    }
+    
+    header div h2{
+        margin-bottom: -5vh;
+        font-size: 6.2vh;
+        padding-top: 35vh;
+    }
+
+    /****** Formando a primeira seção ********** */
+
+    [class^=charbg]{/*Pegando todas aspan que tem atribuito class e inicia com charbg*/
+        width: calc(100vw - 4.5em);
+        height: 100vh;
+        margin-left: 4.5em;
+        background-position: left 0 bottom 0;
+        background-size: auto 100vh;
+    }
+
+    [class^=desc]{
+        margin-top: 0vh;
+    }
+
+    [class^=typesize]{
+        transform: scale(2);
+        transform-origin: 0 0;
+        left: 0;
+        margin-left: 1.5em;
+        margin-top: -40vh;
+    }
+    
+    [class^=justifytxt]{/*Pegando todas aspan que tem atribuito class e inicia com icon*/
+        text-align: justify;
+        font-family: Verdana;
+        font-size: 1em;
+        width: 50vw;
+        margin-left: 5em;
+        
+        margin-top: 55vh;
+        padding-top: 1.8vh;
+        padding-bottom: 1.8vh;
+        padding-left: 7vh;
+        padding-right: 2.7vh;
+        line-height: 5vh;
+    }
+
+}

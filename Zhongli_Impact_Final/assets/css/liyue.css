@@ -1,0 +1,40 @@
+body{
+    background-image: url(/assets/images/liyue.png);
+    background-position: 35%;
+}
+
+.charbgimgright_zhongli{
+    background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20201123/2020112310504363585.png);
+    background-position: right 0vh top 0vh;
+}
+
+.charbgimg_tartaglia{
+    background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20201103/2020110321234137061.png);
+    background-position: right 0 top 0vh;
+}
+
+.charbgimgright_xiao{
+    background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210122/2021012210173258296.png);
+    background-position: right 0 top 0vh;
+}
+
+/****** Aplicando a responsividade com media quary ********** */
+
+@media screen and (min-width: 48.75em){/* 780px = 780 / 16px*/
+  
+    .charbgimgright_zhongli{
+        background-image: url(https://uploadstatic-sea.hoyoverse.com/contentweb/20201123/2020112310503599073.png);
+        background-position: right -20vh top 0vh;
+    }
+    
+    .charbgimg_tartaglia{
+        background-image: url(https://uploadstatic-sea.hoyoverse.com/contentweb/20201103/2020110321160453386.png);
+        background-position: right -8vh top 0vh;
+    }
+    
+    .charbgimgright_xiao{
+        background-image: url(https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210122/2021012215393946486.png);
+        background-position: right 0 top 0vh;
+    }
+
+}

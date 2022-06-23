@@ -1,0 +1,158 @@
+/****** Formando o background do site ********** */
+
+html{
+    scroll-snap-type: none;
+    max-width: 100%;
+}
+
+body{
+    background-image: url(/assets/images/bg_profile_cryo.png);
+    background-position: left 0 bottom 0;
+    background-size: cover;
+}
+
+/****** Formando a primeira seção ********** */
+
+.cor{
+    background-color: rgba(255, 0, 72, 0.5);
+    visibility: hidden;
+    position: absolute;
+    width: 36vw;
+    height: 100vh;
+    right: 0;
+}
+
+.weapons{
+    margin-top: 4.5em;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+[class^=weapon_]{
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
+    height: 100%;
+    width: 100%;
+}
+
+.weapon_bows{
+    background-image: url(/assets/images/Weapon_Polar_Star_2nd.png);
+    background-size: 65%;
+    background-position: 152% 30%;
+    border-bottom: solid 1px white;
+}
+
+.weapon_swords{
+    background-image: url(/assets/images/Weapon_Cinnabar_Spindle_2nd.png);
+    background-size: 60%;
+    background-position: 115% 40%;
+    border-bottom: solid 1px white;
+}
+
+.weapon_catalysts{
+    background-image: url(/assets/images/Weapon_Skyward_Atlas_2nd.png);
+    background-size: 50%;
+    background-position: 119% 30%;
+    border-bottom: solid 1px white;
+}
+
+.weapon_polearms{
+    background-image: url(/assets/images/Weapon_Staff_of_Homa_2nd.png);
+    background-size: 60%;
+    background-position: 100% 30%;
+    border-bottom: solid 1px white;
+}
+
+.weapon_claymores{
+    background-image: url(/assets/images/Weapon_Serpent_Spine_2nd.png);
+    background-size: 55%;
+    background-position: 120% 55%;
+}
+
+.weapons a{
+    height: calc((100vh - 16.2em) / 5);
+    text-decoration: none;
+}
+
+.weapons a div p{
+    font-family: 'GenshinFont';
+    font-size: 3.6vh;
+    font-weight: normal;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(66, 52, 41, 1);
+    max-width: max-content;
+    margin-top: calc(9vh - 7.5vw);
+    margin-left: 10vw;
+}
+
+/****** FormandoO RODAPE seção ********** */
+
+footer{
+    position: fixed;
+}
+
+/****** Aplicando a responsividade com media quary ********** */
+
+@media screen and (min-width: 48.75em){/* 780px = 780 / 16px*/
+
+    body{
+        background-position: left 0 bottom 0;
+    background-size: cover;
+    }
+
+    .weapons{
+        margin-top: 0;
+        margin-left: 4.5em;
+        width: calc(100vw - 4.5em);
+        flex-direction: row;
+    }
+
+    .weapons a{
+        height: calc((100vh - 7.8em));
+        width: calc((100vw - 4.5em) / 5);
+        text-decoration: none;
+    }
+
+    .weapons a div p{
+        font-size: 4.7vh;
+        margin-top: 58vh;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(26, 37, 43, 0.6);
+        padding: 2vh;
+        min-width: calc((100vw - 4.5em) / 5);
+        text-align: center;
+    }
+
+    .weapon_bows{
+        background-image: url(/assets/images/Weapon_Polar_Star_Wish.png);
+        background-size: 120%;
+        background-position: 30% 40%;
+    }
+    
+    .weapon_swords{
+        background-image: url(/assets/images/Weapon_Haran_Geppaku_Futsu_Wish.png);
+        background-size: 125%;
+        background-position: 50% 40%;
+    }
+    
+    .weapon_catalysts{
+        background-image: url(/assets/images/Weapon_Skyward_Atlas_Wish.png);
+        background-size: 120%;
+        background-position: 80% 40%;
+    }
+    
+    .weapon_polearms{
+        background-image: url(/assets/images/Weapon_Primordial_Jade_Winged-Spear_Wish.png);
+        background-size: 120%;
+        background-position: 50% 40%;
+    }
+    
+    .weapon_claymores{
+        background-image: url(/assets/images/Weapon_Serpent_Spine_Wish.png);
+        background-size: 120%;
+        background-position: 50% 40%;
+    }    
+}

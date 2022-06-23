@@ -1,0 +1,36 @@
+/****** Formando a primeira seção ********** */
+
+.img_img1{
+  background-image: url(/assets/images/Weapon_Haran_Geppaku_Futsu_2nd.png);
+  background-position: center 0vw center 5vh;
+}
+
+.img_img2{
+  background-image: url(/assets/images/Weapon_Cinnabar_Spindle_2nd.png);
+  background-position: center 0vw center 5vh;
+}
+
+/****** Formando a segunda seção ********** */
+
+
+/****** Formando a terceira seção ********** */
+
+
+/****** FormandoO RODAPE seção ********** */
+
+/****** Aplicando a responsividade com media quary ********** */
+@media screen and (min-width: 48.75em){/* 780px = 780 / 16px*/
+
+  .img_img1{
+    background-image: url(/assets/images/Weapon_Haran_Geppaku_Futsu_Wish.png);
+    background-position: top -9.5vw left 0vw;
+    background-size: 30vw auto;
+  }
+  
+  .img_img2{
+    background-image: url(/assets/images/Weapon_Cinnabar_Spindle_Wish.png);
+    background-position: top -9.5vw left 0vw;
+    background-size: 30vw auto;
+  }
+
+}

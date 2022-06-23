@@ -1,0 +1,245 @@
+/*Definindo a codificação do texto digitado neste documento*/
+
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'GenshinFont';
+    src: url('/assets/fonts/ja-jp.ttf');
+}
+
+/*Configurção padrão de fontes do site*/
+
+html{
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "GenshinFont";
+}
+
+/****** Formando o background do site ********** */
+
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+body{
+    overflow-x: hidden;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/****** Formando o cabeçalho do site ********** */
+
+.home{
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+}
+
+.menu{
+    background-color: rgba(66, 52, 41, 1);
+    height: 4.5em;
+    width: 100vw;
+    z-index: 900;
+    position: fixed;
+    top: 0%;
+}
+
+.menu nav a, .menu nav a:visited/*, .menu nav p, .menu nav ul, .menu nav ul li, .menu nav ul li a, .menu nav ul li a:visited*/{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.title{
+    vertical-align: bottom;
+}
+
+.menu nav a{
+    font-family: "GenshinFont";
+    font-weight: normal;
+    font-size: 2em;
+    margin-top: 1.7em;
+}
+
+.top{
+    margin-left: 5vw;
+    margin-top: -2em;
+    word-spacing: calc(90vw - 4.5em);
+}
+
+.lista{
+    visibility: hidden;
+    float: left;
+    position: absolute;
+    margin-top: 2vh;
+    width: 100vw;
+    background-color: rgba(66, 52, 41, 0.8);
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.lista div a{
+    margin-top: 0;
+    display: flex;
+}
+
+.lista div a div{
+    margin-top: 0;
+    display: flex;
+}
+
+.lista div:nth-child(even) a{
+    margin-right: 5vw;
+    width: 40vw;
+}
+
+.lista div:nth-child(1) a, div:nth-child(2) a{
+    margin-top: 5vw;
+}
+
+.lista div:nth-child(3) a, div:nth-child(4) a{
+    margin-bottom: 5vw;
+}
+
+.lista div:nth-child(odd) a{
+    width: 45vw;
+    margin-left: 5vw;
+}
+
+.lista div a p{
+    font-family: "GenshinFont";
+    font-weight: normal;
+    font-size: 17px;
+    word-spacing: 0;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.lista div img{
+    margin-top: 3px;
+    margin-right: 0.2em;
+    max-height: 24px;
+}
+
+#btnControl{
+    display: none;
+}
+
+.btn{
+    display: inline-block;
+    font-size: 2em;
+    max-height: 5vh;
+    overflow: hidden;
+}
+
+
+.icon-menu{
+    display: contents;
+}
+
+#btnControl:checked + label .lista{
+    visibility: visible;
+}
+
+/****** FormandoO RODAPE seção ********** */
+
+footer{
+    background-color: rgba(66, 52, 41, 1);
+    height: calc(((1045.5px / 80vw) * 1.3em ) + 4.5em);
+    width: 100vw;
+    z-index: 900;
+    bottom: 0%;
+    scroll-snap-align: end;
+}
+
+.copyright{
+    line-height: 1.3em;
+    width: 80vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.5em;
+}
+
+footer ul{
+    text-align: center;
+    font-size: 1.5em;
+    word-spacing: 0.5em;
+    overflow: auto;
+    margin-left: calc(50vw - 5em);
+}    
+
+footer ul, footer ul li, footer ul li a, footer ul li a:visited{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+/****** Aplicando a responsividade com media quary ********** */
+
+@media screen and (min-width: 48.75em){/* 780px = 780 / 16px*/
+    
+    .menu{
+        height: 100vh;
+        width: 4.5em;
+        top: 0%;
+    }
+
+    .menu nav a{
+        margin-top: 0em;
+    }
+
+    .btn{
+        margin-top: 5vh;
+    }
+
+    .top{
+        margin-left: 1.25em;
+        margin-top: 3vh;
+    }
+    
+    .lista{
+        margin-top: 0vh;
+        top: 0;
+        width: 15vw;
+        margin-left: 72px;
+        left: 0;
+        flex: none;
+    }
+
+    .lista div a{
+        margin-left: -10;
+    }
+    
+    .lista div:nth-child(even) a, .lista div:nth-child(odd) a{
+        margin-left: 0;
+        width: 13vw;
+    }
+    
+    .lista div:nth-child(1) a, div:nth-child(2) a, .lista div:nth-child(3) a, div:nth-child(4) a{
+        padding-top: 4vh;
+        padding-bottom: 3vh;
+        margin-top: 0;
+        margin-bottom: 0vw;
+        width: 13vw;
+        padding-left: 2vw;
+    }
+
+    .lista div:nth-child(1) a{
+        margin-top: 0vh;
+    }
+    
+    div:nth-child(4) a{
+        margin-bottom: 0vh;
+    }
+}
